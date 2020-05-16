@@ -1,0 +1,37 @@
+Run time analysis (Worst-Case Big-O Notation) for each task:
+
+Task 0:
+Worst case complexity=O(1)
+As accessing element from list takes constant time. It it due to the fact that 
+the index of each element is assigned to it which can be used directly to access 
+the element at that index position.
+
+Task 1:
+Worst case complexity=O(n)
+In this task I iterated over the entire row of the dataset, and this iteration 
+time will be equal to the n times the time required to visit 1 row. As set keeps the unique
+elements only so there's no need of comparison. So overall the worst case
+time complexity will be O(n). 
+
+Task 2:
+Worst case complexity=O(n^2)
+In this task I have used loop within loop, one loop for comparison of element and other one for
+iterating over the dictionary. 
+so let's suppose in the worst case we have to iterate over n elements and compare
+with n different elements of calls data so for every element we have to campare
+with entire n elements of other list so it require n*n =n^2 time.
+Also considering the worst case complaxity of max funciton in python which is also O(n^2),
+so combinaly the worst case time complaxity will be O(n^2).
+
+Task 3:
+Worst case complexity=O(nlogn)
+In this task in a single loop I am checking numbers starting with either paranthesis/080/140...
+and emplacing the elements into the list containing elements which is further sorted after converting into 
+set data structure, the sorting used in sorted() method called Timsort which takes O(nlogn) in worst case.
+So the overall complexity will be O(nlogn).
+
+Task 4:
+Worst case complexity=O(nlogn)
+In this task in a single loop, I am adding elements into the two different sets and it will also 
+require linear time in worst case as everything is done within a single loop but sorted method used 
+in this task takes O(nlogn) time in worst case so the overall worst case time complexity will be O(nlogn).
